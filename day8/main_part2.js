@@ -16,7 +16,6 @@ function interpretOpCode(codeArray, codeVisitCountArray, globalCounter, lineNumb
 }
 
 function doesCodeArrayStop(codeArray, codeVisitCountArray, globalCounter, lineNumber) {
-    // console.log(codeArray);
     if (codeVisitCountArray[lineNumber] >= 1) {
         return [false, globalCounter];
     }
